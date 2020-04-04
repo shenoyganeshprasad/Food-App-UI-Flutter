@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/screens/burgerScreen.dart';
 import 'package:food_app/widgets/foodContainer.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -44,9 +45,15 @@ class _HomepageState extends State<Homepage> {
               padding: EdgeInsets.symmetric(horizontal: 15.0),
               child: Row(
                 children: <Widget>[
-                  FoodContainer(imagePath: 'assets/1.png', name: 'Burger Combo', price: '\$11.99'),
+                  FoodContainer(
+                      imagePath: 'assets/1.png',
+                      name: 'Burger Combo',
+                      price: '\$11.99'),
                   SizedBox(width: 20.0),
-                  FoodContainer(imagePath: 'assets/2.png',name: 'Chicken Burger', price: '\$9.99'),
+                  FoodContainer(
+                      imagePath: 'assets/2.png',
+                      name: 'Chicken Burger',
+                      price: '\$9.99'),
                 ],
               ),
             ),
@@ -55,16 +62,33 @@ class _HomepageState extends State<Homepage> {
               padding: EdgeInsets.symmetric(horizontal: 15.0),
               child: Row(
                 children: <Widget>[
-                  FoodContainer(imagePath: 'assets/3.png', name: 'Classic Burger', price: '\$12.99'),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => BurgerScreen()),
+                        );
+                      },
+                      child: FoodContainer(
+                          imagePath: 'assets/3.png',
+                          name: 'Classic Burger',
+                          price: '\$12.99')),
                   SizedBox(width: 20.0),
-                  FoodContainer(imagePath: 'assets/4.png',name: 'Double Burger', price: '\$20.99'),
+                  FoodContainer(
+                      imagePath: 'assets/4.png',
+                      name: 'Double Burger',
+                      price: '\$20.99'),
                 ],
               ),
             ),
             SizedBox(height: 10.0),
             CircleAvatar(
               backgroundColor: Colors.amber,
-              child: Icon(Icons.arrow_downward, color: Colors.white,),
+              child: Icon(
+                Icons.arrow_downward,
+                color: Colors.white,
+              ),
             )
           ],
         ),
