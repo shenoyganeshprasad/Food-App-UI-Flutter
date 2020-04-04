@@ -33,7 +33,7 @@ class _HomepageState extends State<Homepage> {
               'BURGER HOUSE',
               style: GoogleFonts.montserrat(
                 textStyle: TextStyle(
-                    fontSize: MediaQuery.of(context).size.height / 12,
+                    fontSize: MediaQuery.of(context).size.height / 14,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
@@ -61,6 +61,11 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ),
+            SizedBox(height: 10.0),
+            CircleAvatar(
+              backgroundColor: Colors.amber,
+              child: Icon(Icons.arrow_downward, color: Colors.white,),
+            )
           ],
         ),
       ),
