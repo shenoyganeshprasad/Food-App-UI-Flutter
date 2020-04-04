@@ -1,16 +1,21 @@
-# food_app
+# Food App UI
 
-A new Flutter project.
+Food App UI Created in Flutter
 
-## Getting Started
+### Credits
 
-This project is a starting point for a Flutter application.
+Inspired by [UpLabs](https://www.uplabs.com/posts/food-ordering-app-like-uber-eats)
 
-A few resources to get you started if this is your first Flutter project:
+# Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="Screenshots/menu.png">
+<img src="Screenshots/fullscreen.png">
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Created By
+
+[Ganeshprasad Shenoy](https://github.com/shenoyganeshprasad)
+[@ganeshprasad98](https://twitter.com/ganeshprasad98)
+
+> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of coffee
+
+> [PayPal](paypal.me/shenoyganeshprasad)
